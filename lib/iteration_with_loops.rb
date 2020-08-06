@@ -5,10 +5,10 @@ min_array=[]
 row_index=0 
 while row_index < src.count do 
   element_index=0 
-  min_element="".to_i
+  min_element=nil
   while element_index < src[row_index].count do 
-    if src[row_index][element_index]<min_element
-      src[row_index][element_index]=min_element
+    if min_element==nil ||
+      src[row_index][element_index]<min_element
     end 
     element_index+=1
   end
