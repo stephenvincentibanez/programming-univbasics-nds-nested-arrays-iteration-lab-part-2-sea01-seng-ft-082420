@@ -9,7 +9,7 @@ while row_index < src.count do
   while element_index < src[row_index].count do 
     if min_element==nil ||
       src[row_index][element_index]<min_element
-      min_element=
+      min_element=src[row_index][element_index]
     end 
     element_index+=1
   end
